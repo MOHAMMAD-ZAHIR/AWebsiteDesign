@@ -12,13 +12,44 @@ a{
 .navigation, .footer{
     background: white;
 }
-.mobile-menu, .mobile-menu-exit{
-    display: none;
+
+
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.navigation{
+    padding: 1em;
+}
+.navigation .container{
+    display: grid;
+    grid-template-columns: 180px auto;
+}
+
+.navigation nav{
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+.navigation ul{
+    display: flex;
 }
 
 
 
+
+/* for mobile device */
+.mobile-menu, .mobile-menu-exit{
+    display: none;
+}
 @media only screen and (max-width: 420px){
+    .logo{
+        margin-left: .5em;
+    }
     .mobile-menu, .mobile-menu-exit{
         display: block;
     }
