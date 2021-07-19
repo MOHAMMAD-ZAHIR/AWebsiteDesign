@@ -1,15 +1,147 @@
-<html>
-    <head>
-        <title>this is title section</title>
-    </head>
-    <body>
-        <h1>website header</h1>
-        <h4>change from my end</h4>
-<<<<<<< HEAD
-        <h4>Again change</h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WelCome to our Website</title>
+</head>
+<body>
+    <div>
+        <div class="navigation">
+            <div class="container">
+                <a href="#">Remember<span>That</span></a>
+                <img id="mobile-menu-on-js" class="mobile-menu" src="Images/menu.svg" alt="Open Navigation">
+                <nav>
+                    <img id="mobile-menu-exit-js" class="mobile-menu-exit" src="Images/exit.svg" alt="exit Navigation">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Ship</a></li>
+                        <li><a href="#">Track</a></li>
+                    </ul>
+                    <ul class="secondary-nav">
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-=======
-        <h3>web changed</h3>
->>>>>>> 3a7a97dfb4d51459c81fc377daf2ffcb7d8b3a7d
-    </body>
+        <div class="content">
+            <div class="container">
+                <div class="MainContent">
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    <p>Maincontent</p>
+                    
+                </div>
+                <div class="Sidebar">
+                    This is sidebar
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="up-section">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <div>Contacts and Support</div>
+                            <div><a href="#">Helps and Support</a></div>
+                            <div><a href="#">FAQs</a></div>
+                            <div><a href="#">Contacts US</a></div>
+                        </li>
+                        <li>
+                            <div>LEGAL</div>
+                            <div><a href="#">Tearms & condition</a></div>
+                            <div><a href="#">Privacy Notice</a></div>
+                        </li>
+                        <li>
+                            <div>About</div>
+                            <div><a href="#">About Us</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="down-section">
+                <div class="container">
+                    <ul>
+                        <li>Follow US: fb, twitter etc</li>
+                        <li>2021 @ couriar website JKKNIU team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const mobileBtn = document.getElementById('mobile-menu-on-js');
+        const mobileBtnExit = document.getElementById('mobile-menu-exit-js');
+        const nav = document.querySelector('nav');
+
+        mobileBtn.addEventListener('click', () =>{
+            nav.classList.add('mobile-button');
+        })
+        mobileBtnExit.addEventListener('click', () =>{
+            nav.classList.remove('mobile-button');
+        })
+    </script>
+</body>
 </html>
