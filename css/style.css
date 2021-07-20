@@ -6,114 +6,91 @@ body{
 a{
     text-decoration: none;
 }
-.navigation, .content{
+.navbar, .content, .footer{
     border: 1px solid black;
 }
-.navigation, .footer{
+.footer{
     background: white;
 }
-
-
-.container{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.navigation{
-    padding: 1em;
-}
-.navigation .container{
-    display: grid;
-    grid-template-columns: 180px auto;
-}
-
-.navigation nav{
-    display: flex;
-    justify-content: space-between;
-    background: none;
-    height: auto;
-    width: 100%;
-    padding: 0;
-}
-.navigation ul{
-    display: flex;
-}
-
-
-
-
-/* for mobile device */
-.mobile-menu, .mobile-menu-exit{
+nav{
     display: none;
 }
-@media only screen and (max-width: 420px){
-    .logo{
-        margin-left: .5em;
-    }
+.mobile-menu, .mobile-menu-exit{
+    cursor: pointer;
+    margin-right: .5em;
+}
+.navbar .container{
+    display: flex;
+    place-content: space-between;
+}
+
+nav{
+    position: fixed;
+    width: 66%;
+    background: black;
+    color: white;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 1em;
+}
+nav .primary-nav{
+    margin-top: 2.5em;
+}
+nav li a{
+    display: block;
+    font-size: 1.4em;
+    padding: .5em;
+    color: white;
+    text-align: right;
+}
+nav li a:hover{
+    font-weight: bold;
+}
+nav ul{
+    list-style-type: none; 
+}
+.mobile-menu-exit{
+    float: right;
+    margin-right: .5em;
+}
+.mobile-button{
+    display: block;
+}
+.logo{
+    margin: 1em 1em;
+}
+@media only screen and (min-width: 600px) {
     .mobile-menu, .mobile-menu-exit{
-        display: block;
-    }
-    .navigation .container{
-        display: flex;
-        place-content: space-between;
-    }
-    .mobile-menu, .mobile-menu-exit{
-        cursor: pointer;
-        margin-right: .5em;
-    }
-    .mobile-button{
-        display: block;
-    }
-    nav{
         display: none;
-        position: fixed;
-        width: 60%;
-        background: black;
-        right: 0;
-        top: 0;
-        height: 100vh;
-        padding: 1em;
-        text-align: right;
-        
     }
-    nav .primary-nav{
-        margin-top: 2.5em;
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
     }
-    nav a{
-        color: white;
-        font-size: 1.2em;
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
     }
-    nav li{
-        padding: .5em;
+    .navbar nav a{
+        color: black;
+        font-size: 1em;
+        padding: .1em 1em;
     }
-    nav a:hover{
+    .navbar nav ul{
+        display: flex;
+        padding: 0;
+    }
+    .navbar nav ul.primary-nav{
+        margin: 1em;
+    }
+    .current{
         font-weight: bold;
     }
-    .mobile-menu-exit{
-        float: right;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-.footer a{
-    color: #444444;
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.up-section, .down-section{
-    border-top: solid;
-}
-.down-section li{
-    text-align: center;
 }
