@@ -1,17 +1,16 @@
 body{
     background: #F2F2F2;
     margin: 0;
-    padding: 1em 1em 5em 1em;
+    padding: 1em 1em 5em 1em; 
+    font-size: 20px;
 }
 a{
     text-decoration: none;
 }
-.navbar, .content, .footer{
+.navbar, .content{
     border: 1px solid black;
 }
-.footer{
-    background: white;
-}
+
 nav{
     display: none;
 }
@@ -22,6 +21,9 @@ nav{
 .navbar .container{
     display: flex;
     place-content: space-between;
+}
+.navbar{
+    background-color: white;
 }
 
 nav{
@@ -93,4 +95,45 @@ nav ul{
     .current{
         font-weight: bold;
     }
+}
+
+
+
+
+/*footer section*/
+.footer{
+    background: white;
+}
+.down-section{
+    border-top: black 1px solid;
+}
+.footer ul{
+    list-style-type: none; 
+    border-radius: 25px;
+    padding: 0;
+}
+.footer .container{
+    margin: 0;
+}
+.footer{
+    margin: 2px;
+    padding: 2px;
+}
+.footer .up-section li{
+    border-radius: 20px;
+    border: 1px solid #73AD21;
+    padding: 20px;
+    margin: 5px;
+    height: 100%;
+}
+.footermenu{
+    font-weight: bold;
+    margin: 0;
+}
+.footer a{
+    color: rgba(73, 3, 3, 0.637);
+}
+@media only screen and(min-width: 400px) {
+    /* need to responsive for (big device) not mobile */
+
 }
