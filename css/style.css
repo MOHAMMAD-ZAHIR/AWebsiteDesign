@@ -7,10 +7,6 @@ body{
 a{
     text-decoration: none;
 }
-.content .container{
-    border: 1px solid black;
-}
-
 nav{
     display: none;
 }
@@ -25,15 +21,14 @@ nav{
 .navbar{
     background-color: white;
 }
-
 nav{
     position: fixed;
-    width: 66%;
+    width: 55%;
     background: black;
     color: white;
-    right: 0;
-    top: 0;
-    height: 100vh;
+    right: 10px;
+    top: 5px;
+    height: 92vh;
     padding: 1em;
 }
 nav .primary-nav{
@@ -148,6 +143,9 @@ div{
     margin: 2px;
     color: rgba(73, 3, 3, 0.637);
 }
+.down-section a{
+    color: #536391;
+}
 @media only screen and (min-width: 600px) {
     /* need to responsive for (big device) not mobile */
     .footer .up-section ul{
@@ -162,4 +160,12 @@ div{
         margin-left: 10%;
         margin-right: 10%;
     }
+}
+#particles-js{
+    height: 0px;
+}
+.content .container{
+    border: 1px solid black;
+    background: #edf0f1;
+    padding: 0px;
 }
