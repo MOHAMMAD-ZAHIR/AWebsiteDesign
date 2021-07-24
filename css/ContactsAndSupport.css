@@ -1,0 +1,30 @@
+.contentBody{
+    border: black 1px solid;
+}
+.contentMenu ul{
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.contentMenu li{
+    height: 60px;
+    width: 33%;
+    margin: 1px;
+    text-align: center;
+    list-style-type: none;
+}
+.contentMenu li a{
+    background-color: white;
+    height: 80%;
+    padding-top: 15px;
+    color: rgb(85, 116, 145);
+    display: block;
+}
+.contentMenu li a:hover{
+    border-bottom: 5px rgb(223, 143, 143) solid;
+}
+.currentContactsAndSupport{
+    font-weight: bold;
+    border-bottom: 5px rgb(223, 143, 143) solid;
+}
