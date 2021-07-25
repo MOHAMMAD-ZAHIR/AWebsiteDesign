@@ -1,4 +1,4 @@
-.contentBody{
+.content .container, .contentBody{
     border: black 1px solid;
 }
 .contentMenu ul{
