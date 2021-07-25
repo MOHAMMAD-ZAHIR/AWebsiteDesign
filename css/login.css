@@ -1,3 +1,51 @@
-.form{
-    
+.loginSection{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #d8caca;
+    box-shadow: 3px 3px rgb(156, 156, 141);
+}
+h2, .createSection{
+    margin-top: 40px;
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+.submitButton{
+    padding: 1% 8% 1% 8%;
+}
+.input{
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.icon{
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+}
+@media only screen and (max-width: 450px){
+    .loginSection{
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 900px){
+    .loginSection{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 }
