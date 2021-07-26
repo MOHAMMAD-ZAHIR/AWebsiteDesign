@@ -48,7 +48,20 @@
                         <img class="DropDown-menu icon" src="Images/DropDownIcon.png" alt="Open Description">
                         <img class="DropUp-menu icon Hidecontent" src="Images/DropUpIcon.png" alt="Close Description">
                     </div>
-                    <div class="Description Hidecontent"> Description1</div>
+                    <div class="Description Hidecontent"> 
+                        <div>Be prepared before you ship!</div>
+                        <p>We transports a vast variety of goods and commodities around the world for our customers. Ensuring all shipments travel safely and securely throughout our global network is of utmost importance, so it’s essential you are aware of guidelines and restrictions for the items you are shipping.</p>
+                        <p>Which goods can be shipped and shipping requirements may vary from destination to destination, local laws and regulations. Some goods may only require a shipping label, while other items may require additional documentation, an agreement with US and specific packaging, labels and package markings.</p>
+                        <p>Here are a few questions you can ask yourself when preparing to ship your goods:</p>
+                        <ul>
+                            <li>Does the shipment destination country allow this item?</li>
+                            <li>Am I shipping Lithium Batteries?</li>
+                            <li>Is anything combustible?</li>
+                            <li>Do I need approval to ship this item?</li>
+                            <li>Is anything liquid or perishable?</li>
+                            <li>Have I met the shipping regulations for these items?</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="contentBody">
@@ -61,6 +74,28 @@
                         <img class="DropUp-menu icon Hidecontent" src="Images/DropUpIcon.png" alt="Close Description">
                     </div>
                     <div class="Description Hidecontent"> Description2</div>
+                </div>
+                <div class="contentBody">
+                    <div class="contentItem">
+                        <div class="title">
+                            <div class="heading">The Journey of a Package</div>
+                            <div class="subheading">Watch how your package travels with us and learn how we can help you with each step of the journey.</div>
+                        </div>
+                        <img class="DropDown-menu icon" src="Images/DropDownIcon.png" alt="Open Description">
+                        <img class="DropUp-menu icon Hidecontent" src="Images/DropUpIcon.png" alt="Close Description">
+                    </div>
+                    <div class="Description Hidecontent"> Description3</div>
+                </div>
+                <div class="contentBody">
+                    <div class="contentItem">
+                        <div class="title">
+                            <div class="heading">What Documents Do I Need?</div>
+                            <div class="subheading">Get information and advice about the documents needed to accompany your shipment.</div>
+                        </div>
+                        <img class="DropDown-menu icon" src="Images/DropDownIcon.png" alt="Open Description">
+                        <img class="DropUp-menu icon Hidecontent" src="Images/DropUpIcon.png" alt="Close Description">
+                    </div>
+                    <div class="Description Hidecontent"> Description4</div>
                 </div>
 
             </div>
@@ -100,32 +135,33 @@
             </div>
         </div>
     </div>
+
     <script>
-        const contentBodys = document.querySelectorAll(".contentBody");
-        contentBodys.forEach(contentBody =>{
-            //console.log(contentBody);
+        var contentItems = document.getElementsByClassName("contentItem");
+        var DropDowns = document.getElementsByClassName("DropDown-menu");
+        var i;
 
-            const DropDown = document.getElementsByClassName('DropDown-menu');
-            const DropUp = document.getElementsByClassName('DropUp-menu');
-
-            const DropDownmenu = document.querySelector('DropDown-menu');
-            const DropUpmenu = document.querySelector('.DropUp-menu');
-            const Description = document.querySelector('.Description');
-
-            for(var i=0; i<contentBodys.length; i++){
-                DropDown[i].addEventListener('click', () =>{
-                    DropDownmenu.classList.add('Hidecontent');
-                    DropUpmenu.classList.remove('Hidecontent');
-                    Description.classList.remove('Hidecontent');
-                })
-                DropUp[i].addEventListener('click', () =>{
-                    DropDownmenu.classList.remove('Hidecontent');
-                    DropUpmenu.classList.add('Hidecontent');
-                    Description.classList.add('Hidecontent');
-                }) 
-            }
-        }) 
-
+        for (i = 0; i < contentItems.length; i++) {
+            contentItems[i].addEventListener("click", function() {
+                var Description = this.nextElementSibling;
+                if (Description.style.display === "block") {
+                    Description.style.display = "none";
+                } else {
+                    Description.style.display = "block";
+                }
+            });
+            DropDowns[i].addEventListener("click", function(){
+                var Icon = this.nextElementSibling;
+                if (Icon.style.display === "block") { //this function isn't working: need to fix
+                    Icon.style.display = "none";
+                    this.style.display = "block";
+                    console.log("block");
+                } else {
+                    Icon.style.display = "block";
+                    this.style.display = "none";
+                }
+            });
+        }
     </script>
 
 

@@ -38,9 +38,55 @@
                         <li><a href="/ContactsUS.html">Contacts Us</a></li>
                     </ul>
                 </div>
+
                 <div class="contentBody">
-                    this is content body section
+                    <div class="contentItem">
+                        <div class="title">
+                            <div class="heading">What Can I Ship?</div>
+                            <div class="subheading">View guidelines and restrcitions about the items you want to ship to and from various countries</div>
+                        </div>
+                        <img class="DropDown-menu icon" src="Images/DropDownIcon.png" alt="Open Description">
+                        <img class="DropUp-menu icon Hidecontent" src="Images/DropUpIcon.png" alt="Close Description">
+                    </div>
+                    <div class="Description Hidecontent"> 
+                        Description1
+                    </div>
                 </div>
+
+                <div class="contentBody">
+                    <div class="contentItem">
+                        <div class="title">
+                            <div class="heading">Packing with Care</div>
+                            <div class="subheading">Pack your shipments for the journey. Follow our packing advice and tips and your shipment recipients will thank you!</div>
+                        </div>
+                        <img class="DropDown-menu icon" src="Images/DropDownIcon.png" alt="Open Description">
+                        <img class="DropUp-menu icon Hidecontent" src="Images/DropUpIcon.png" alt="Close Description">
+                    </div>
+                    <div class="Description Hidecontent"> Description2</div>
+                </div>
+                <div class="contentBody">
+                    <div class="contentItem">
+                        <div class="title">
+                            <div class="heading">The Journey of a Package</div>
+                            <div class="subheading">Watch how your package travels with DHL and learn how we can help you with each step of the journey.</div>
+                        </div>
+                        <img class="DropDown-menu icon" src="Images/DropDownIcon.png" alt="Open Description">
+                        <img class="DropUp-menu icon Hidecontent" src="Images/DropUpIcon.png" alt="Close Description">
+                    </div>
+                    <div class="Description Hidecontent"> Description3</div>
+                </div>
+                <div class="contentBody">
+                    <div class="contentItem">
+                        <div class="title">
+                            <div class="heading">What Documents Do I Need?</div>
+                            <div class="subheading">Get information and advice about the documents needed to accompany your shipment.</div>
+                        </div>
+                        <img class="DropDown-menu icon" src="Images/DropDownIcon.png" alt="Open Description">
+                        <img class="DropUp-menu icon Hidecontent" src="Images/DropUpIcon.png" alt="Close Description">
+                    </div>
+                    <div class="Description Hidecontent"> Description4</div>
+                </div>
+
             </div>
         </div>
 
@@ -78,6 +124,36 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var contentItems = document.getElementsByClassName("contentItem");
+        var DropDowns = document.getElementsByClassName("DropDown-menu");
+        var i;
+
+        for (i = 0; i < contentItems.length; i++) {
+            contentItems[i].addEventListener("click", function() {
+                var Description = this.nextElementSibling;
+                if (Description.style.display === "block") {
+                    Description.style.display = "none";
+                } else {
+                    Description.style.display = "block";
+                }
+            });
+            DropDowns[i].addEventListener("click", function(){
+                var Icon = this.nextElementSibling;
+                if (Icon.style.display === "block") { //this function isn't working: need to fix
+                    Icon.style.display = "none";
+                    this.style.display = "block";
+                    console.log("block");
+                } else {
+                    Icon.style.display = "block";
+                    this.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+
     <script>
         const mobileBtn = document.getElementById('mobile-menu-on-js');
         const mobileBtnExit = document.getElementById('mobile-menu-exit-js');
