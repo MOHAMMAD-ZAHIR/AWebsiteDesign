@@ -80,3 +80,14 @@
     margin: 8px;
     font-weight: normal;
 }
+
+/* FAQ page */
+.FAQheading{
+    font-size: 22px;
+}
+.subcategory{
+    font-weight: bold;
+}
+.FAQs .contentBody{
+    font-size: 15px;
+}
