@@ -1,4 +1,4 @@
-.content .container, .contentBody{
+.contentBody{
     border: black 1px solid;
 }
 .contentMenu ul{
@@ -27,4 +27,40 @@
 .currentContactsAndSupport{
     font-weight: bold;
     border-bottom: 5px rgb(223, 143, 143) solid;
+}
+
+
+/* content body */
+.contentItem{
+    display: flex;
+    place-content: space-between;
+}
+.Hidecontent{
+    display: none;
+}
+.Unhidecontent{
+    display: block;
+}
+.title{
+    width: 92%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.heading{
+    font-weight: bold;
+    font-size: 30px;
+}
+.subheading{
+    color: rgb(85, 143, 143);
+    font-size: 15px;
+}
+.contentBody .icon{
+    padding: 6px;
+    margin: auto;
+}
+.contentItem .icon{
+    cursor: pointer;
+}
+.Description{
+    border: black 1px solid;
 }

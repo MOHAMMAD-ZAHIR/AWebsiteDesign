@@ -38,9 +38,31 @@
                         <li><a href="/ContactsUS.html">Contacts Us</a></li>
                     </ul>
                 </div>
+
                 <div class="contentBody">
-                    this is content body section
+                    <div class="contentItem">
+                        <div class="title">
+                            <div class="heading">What Can I Ship?</div>
+                            <div class="subheading">View guidelines and restrcitions about the items you want to ship to and from various countries</div>
+                        </div>
+                        <img class="DropDown-menu icon" src="Images/DropDownIcon.png" alt="Open Description">
+                        <img class="DropUp-menu icon Hidecontent" src="Images/DropUpIcon.png" alt="Close Description">
+                    </div>
+                    <div class="Description Hidecontent"> Description1</div>
                 </div>
+
+                <div class="contentBody">
+                    <div class="contentItem">
+                        <div class="title">
+                            <div class="heading">Packing with Care</div>
+                            <div class="subheading">Pack your shipments for the journey. Follow our packing advice and tips and your shipment recipients will thank you!</div>
+                        </div>
+                        <img class="DropDown-menu icon" src="Images/DropDownIcon.png" alt="Open Description">
+                        <img class="DropUp-menu icon Hidecontent" src="Images/DropUpIcon.png" alt="Close Description">
+                    </div>
+                    <div class="Description Hidecontent"> Description2</div>
+                </div>
+
             </div>
         </div>
 
@@ -78,6 +100,35 @@
             </div>
         </div>
     </div>
+    <script>
+        const contentBodys = document.querySelectorAll(".contentBody");
+        contentBodys.forEach(contentBody =>{
+            //console.log(contentBody);
+
+            const DropDown = document.getElementsByClassName('DropDown-menu');
+            const DropUp = document.getElementsByClassName('DropUp-menu');
+
+            const DropDownmenu = document.querySelector('DropDown-menu');
+            const DropUpmenu = document.querySelector('.DropUp-menu');
+            const Description = document.querySelector('.Description');
+
+            for(var i=0; i<contentBodys.length; i++){
+                DropDown[i].addEventListener('click', () =>{
+                    DropDownmenu.classList.add('Hidecontent');
+                    DropUpmenu.classList.remove('Hidecontent');
+                    Description.classList.remove('Hidecontent');
+                })
+                DropUp[i].addEventListener('click', () =>{
+                    DropDownmenu.classList.remove('Hidecontent');
+                    DropUpmenu.classList.add('Hidecontent');
+                    Description.classList.add('Hidecontent');
+                }) 
+            }
+        }) 
+
+    </script>
+
+
     <script>
         const mobileBtn = document.getElementById('mobile-menu-on-js');
         const mobileBtnExit = document.getElementById('mobile-menu-exit-js');
