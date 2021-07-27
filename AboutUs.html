@@ -1,1 +1,130 @@
-not wotk yet
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ContactsAndSupport.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    <title>WelCome to our Website</title>
+</head>
+<body id="particles-js">
+    <div>
+        <div class="navbar">
+            <div class="container">
+                <a href="/" class="logo">Logo<span> & Name</span></a>
+                <img id="mobile-menu-on-js" class="mobile-menu" src="Images/menu.svg" alt="Open Navigation">
+                <nav>
+                    <img id="mobile-menu-exit-js" class="mobile-menu-exit" src="Images/exit.svg" alt="exit Navigation">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="/">Home</a></li>
+                        <li><a href="/ship.html">Ship</a></li>
+                        <li><a href="/track.html">Track</a></li>
+                    </ul>
+                    <ul class="secondary-nav">
+                        <li><a href="/register.html">Register</a></li>
+                        <li><a href="/login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <h2>About Us</h2>
+                <!-- <div class="contentMenu">
+                    <ul>
+                        <li><a href="/HelpsAndSupport.html">Shiping Advice</a></li>
+                        <li><a href="/FAQs.html">FAQs</a></li>
+                        <li class="currentContactsAndSupport"><a href="/ContactsUS.html">Contacts Us</a></li>
+                    </ul>
+                </div> -->
+                <div class="contentBody">
+                    <div class="flex">
+                        <div class="email contentItem">
+                            <div class="top">Email Us</div>
+                            <div class="bottom">
+                                <div class="header">Complaint? Compliment?</div>
+                                <div>Go straight to the top and tell Md. Miarul Haque, Managing Director, DHL Express Bangladesh</div>
+                            </div>
+                        </div>
+                        <div class="phone contentItem">
+                            <div class="top">Call Us</div>
+                            <div class="bottom">
+                                <div class="header">Customer Service</div>
+                                <h4>xxxxx, +880xxxxxx</h4>
+                                <div>Questions and support for shipment status, delivery and courier pickups.</div>
+                            </div>
+                        </div>
+                        <div class="form contentItem">
+                            <div>
+                                <form action="/action_page.php">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your Full name..">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your Email..">
+                                    <label for="phone number">Phone Number</label>
+                                    <input type="number" id="phone" name="phone" placeholder="Your Phone Number..">
+
+                                    <label for="text">Your Massage</label>
+                                    <textarea id="massage" name="massage" placeholder="Write your massage.." style="height:200px; width:100%"></textarea>
+
+                                    <input type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="up-section">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <div class="footermenu">Contacts and Support</div>
+                            <div class="footerlink"><a href="/HelpsAndSupport.html">Helps and Support</a></div>
+                            <div class="footerlink"><a href="/FAQs.html">FAQs</a></div>
+                            <div class="footerlink"><a href="/ContactsUS.html">Contacts US</a></div>
+                        </li>
+                        <li>
+                            <div class="footermenu">LEGAL</div>
+                            <div class="footerlink"><a href="/TearmsAndCondition.html">Tearms & condition</a></div>
+                            <div class="footerlink"><a href="/PrivacyNotice.html">Privacy Notice</a></div>
+                        </li>
+                        <li>
+                            <div class="footermenu">About</div>
+                            <div class="footerlink"><a href="/AboutUs.html">About Us</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="down-section">
+                <div class="container">
+                    <ul>
+                        <li>Follow US on <a href="https://facebook.com">Facebook</a>, <a href="https://twitter.com">Twitter</a></li>
+                        <li>2021 @Couriar Website By JKKNIU team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const mobileBtn = document.getElementById('mobile-menu-on-js');
+        const mobileBtnExit = document.getElementById('mobile-menu-exit-js');
+        const nav = document.querySelector('nav');
+        mobileBtn.addEventListener('click', () =>{
+            nav.classList.add('mobile-button');
+        })
+        mobileBtnExit.addEventListener('click', () =>{
+            nav.classList.remove('mobile-button');
+        })
+    </script>
+    <script type="text/javascript" src="JS/particle/particle.js"></script>
+    <script type="text/javascript" src="JS/particle/app.js"></script>
+</body>
+</html>

@@ -10,6 +10,11 @@
     border: black 1px solid;
     padding: 2px;
     width: 33%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80%;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 5px;
 }
 
 /* form */
@@ -51,4 +56,11 @@ input {
   .bottom{
     margin-top: 70px;
     padding: 2px;
+  }
+  .flex .contentItem{
+    display: block;
+  }
+  .header{
+    font-weight: bold;
+    text-align: center;
   }
