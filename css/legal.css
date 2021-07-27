@@ -1,0 +1,16 @@
+.contentMenu ul{
+    display: flex;
+    place-content: center;
+}
+.body li{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 17px;
+    margin: 6px;
+    padding: 2px;
+    font-family:  'Arial Narrow', Geneva, Tahoma, sans-serif;
+}
+.privacy{
+    font-size: 15px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
