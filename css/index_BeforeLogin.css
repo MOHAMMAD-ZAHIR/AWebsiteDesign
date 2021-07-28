@@ -1,0 +1,47 @@
+.container2{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+button a{
+    color: black;
+}
+.onBackground{
+    padding-top: 20%;
+    display: flex;
+    place-content: space-between;
+    color: black;
+}
+.leftSection, .rightSection{
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+}
+.background{
+    height: 500px;
+    background-image: url("/Images/sriti_shoudho.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+@media only screen and (max-width: 768px) {
+    .background{
+        height: 360px;
+    }
+    .rightSection{
+        margin: 30px !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .background{
+        height: 250px;
+    }
+    .onBackground{
+        padding-top: 0;
+    }
+}
+.rightSection{
+    margin-left: 300px;
+    background: #888a88;
+    text-align: center;
+    padding-bottom: 15px;
+}
