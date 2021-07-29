@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ship.css">
+    <title>WelCome to our Website</title>
+</head>
+<body id="particles-js">
+    <div>
+        <div class="navbar">
+            <div class="container">
+                <a href="/" class="logo">Logo<span> & Name</span></a>
+                <img id="mobile-menu-on-js" class="mobile-menu" src="Images/menu.svg" alt="Open Navigation">
+                <nav>
+                    <img id="mobile-menu-exit-js" class="mobile-menu-exit" src="Images/exit.svg" alt="exit Navigation">
+                    <ul class="primary-nav">
+                        <li><a href="/">Home</a></li>
+                        <li class="current"><a href="/ship.html">Ship</a></li>
+                        <li><a href="/track.html">Track</a></li>
+                    </ul>
+                    <ul class="secondary-nav">
+                        <li><a href="/register.html">Register</a></li>
+                        <li><a href="/login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <div class="part">
+                    <div class="">Create Shipment</div>
+                    <div class="none"></div>
+                    <div>Payment</div>
+                    <div class="none"></div>
+                    <div class="current">Print</div>
+                </div>
+                <div class="PaymentAPI">
+                    Load PDF
+                </div>
+                <form action="/print.html">
+                    <div class="submitButton">
+                        <input type="submit" name="submit" value="Print"/>
+                    </div>
+                </form>                 
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="up-section">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <div class="footermenu">Contacts and Support</div>
+                            <div class="footerlink"><a href="/HelpsAndSupport.html">Helps and Support</a></div>
+                            <div class="footerlink"><a href="/FAQs.html">FAQs</a></div>
+                            <div class="footerlink"><a href="/ContactsUS.html">Contacts US</a></div>
+                        </li>
+                        <li>
+                            <div class="footermenu">LEGAL</div>
+                            <div class="footerlink"><a href="/TearmsAndCondition.html">Tearms & condition</a></div>
+                            <div class="footerlink"><a href="/PrivacyNotice.html">Privacy Notice</a></div>
+                        </li>
+                        <li>
+                            <div class="footermenu">About</div>
+                            <div class="footerlink"><a href="/AboutUs.html">About Us</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="down-section">
+                <div class="container">
+                    <ul>
+                        <li>Follow US on <a href="https://facebook.com">Facebook</a>, <a href="https://twitter.com">Twitter</a></li>
+                        <li>2021 @Couriar Website By JKKNIU team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const mobileBtn = document.getElementById('mobile-menu-on-js');
+        const mobileBtnExit = document.getElementById('mobile-menu-exit-js');
+        const nav = document.querySelector('nav');
+        mobileBtn.addEventListener('click', () =>{
+            nav.classList.add('mobile-button');
+        })
+        mobileBtnExit.addEventListener('click', () =>{
+            nav.classList.remove('mobile-button');
+        })
+    </script>
+    <script type="text/javascript" src="JS/particle/particle.js"></script>
+    <script type="text/javascript" src="JS/particle/app.js"></script>
+</body>
+</html>

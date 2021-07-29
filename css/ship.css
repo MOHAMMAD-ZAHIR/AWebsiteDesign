@@ -1,0 +1,71 @@
+.part{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.none{
+    border: black 1px solid;
+    width: 40px;
+    height: 0px;
+    margin-top: 12px;
+}
+
+
+.MainContent{
+    display: flex;
+    font-size: 15px;
+}
+.LeftForm{
+    border-right: black 2px solid;
+    padding-right: 15px;
+}
+.LeftForm, .RightForm{
+    width: 50%;
+    margin: 10px;
+}
+.ThreeInput{
+    display: flex;
+    place-content: space-between;
+}
+.ThreeInput .input{
+    margin-top: 5px;
+}
+
+.input input, select{
+    width: 100%;
+    padding: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.input, .checkbox{
+    margin-top: 15px;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    margin: 8px;
+    cursor: pointer;
+}
+.submitButton{
+    margin-left: 90%
+}
+@media only screen and (max-width: 728px) {
+    .ThreeInput{
+        display: block;
+    }
+}
+
+
+
+/* PaymentAPI */
+.PaymentAPI{
+    height: 60vh;
+    border-radius: 4px;
+    border: black 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
