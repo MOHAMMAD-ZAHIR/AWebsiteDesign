@@ -57,6 +57,19 @@ input[type=submit] {
     .ThreeInput{
         display: block;
     }
+    .submitButton{
+        margin-left: 70%
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .submitButton{
+        margin-left: 80%
+    }
+}
+@media only screen and (max-width: 500px) {
+    .submitButton{
+        margin-left: 60%
+    }
 }
 
 
