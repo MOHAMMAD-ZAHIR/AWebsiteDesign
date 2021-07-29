@@ -38,6 +38,10 @@ button a{
     .onBackground{
         padding-top: 0;
     }
+    .leftSection{
+        font-size: 14px;
+        margin-top: 70px;
+    }
 }
 .rightSection{
     margin-left: 300px;
