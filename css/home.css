@@ -1,0 +1,144 @@
+.container2{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+button a{
+    color: black;
+}
+.onBackground{
+    padding-top: 20%;
+    display: flex;
+    place-content: space-between;
+    color: black;
+}
+.leftSection, .rightSection{
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+}
+.background{
+    height: 500px;
+    background-image: url("/Images/sriti_shoudho.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+@media only screen and (max-width: 768px) {
+    .background{
+        height: 360px;
+    }
+    .rightSection{
+        margin: 30px !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .background{
+        height: 250px;
+    }
+    .onBackground{
+        padding-top: 0;
+    }
+}
+.rightSection{
+    margin-left: 300px;
+    background: #888a88;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+/* Our Valued Services */
+h3 {
+    text-align: center;
+}
+.service {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.service .title{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.title2{
+    padding-top: 50px;
+}
+.service .text{
+    margin-top: 10px;
+    text-justify: inter-word;
+    font-size: 15px;
+    color: rgb(128, 148, 140);
+}
+.service2 img {
+    width: 100%;
+    border-radius: 50%;
+    vertical-align: middle !important;
+}
+.service1, .service3{
+    width: 35%;
+    padding: 2px;
+}
+.service2{
+    width: 30%;
+}
+@media only screen and (max-width: 1050px) {
+    .title2{
+        padding-top: 25px;
+    }
+    .service2{
+        margin-top: 2%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .service{
+        display: block;
+    }
+    .service1, .service2, .service3{
+        width: 100%;
+    }
+}
+
+
+
+/* Why My Company */
+.WhyMyCompany{
+    text-justify: inter-word;
+    text-align: justify;
+    padding: 10px;
+}
+.WhyMyCompany p, .WhyMyCompany ul{
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.WhyMyCompany img {
+    border-radius: 2%;
+    border: rgb(204, 178, 178) 1px solid;
+    padding: 2px;
+    float: left;
+    margin-right: 2px;
+}
+.WhyMyCompany ul {
+    list-style: none;
+    margin: 0;
+    padding: 2px;
+}
+.imageAndText{
+    display: block;
+}
+.WhyMyCompany li{
+    margin: 6px;
+}
+.WhyMyCompany ul li:before {
+    content: '✓';
+    padding: 4px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.extra ul li:before {
+    background-color: green !important;   
+}
+.extra{
+    display: flex;
+    place-content: space-between;
+}
