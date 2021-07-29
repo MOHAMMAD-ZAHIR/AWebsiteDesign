@@ -142,3 +142,47 @@ h3 {
     display: flex;
     place-content: space-between;
 }
+
+/* Two Side */
+.TwoSide{
+    display: flex;
+    padding: 7px;
+    place-content: space-between;
+}
+.TwoSide .left, .TwoSide .right{
+    width: 50%;
+}
+.TwoSide iframe{
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+}
+.part{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    background: white;
+}
+
+
+
+
+/* Our Work Process */
+.sign{
+    margin-top: 40px;
+}
+.OurWorkProcess .title{
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+.OurWorkProcess .item{
+    margin-left: 45%;
+}
+.process .img{
+    padding: 20px;
+    width: 50px;
+    align-items: center;
+    border: 1px solid green;
+    border-radius: 50%;
+}
