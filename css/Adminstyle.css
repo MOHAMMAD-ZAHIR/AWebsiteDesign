@@ -83,9 +83,6 @@ body{
 }
 
 /* Dashboard - processing Overview */
-.orderOverview, .c{
-    border: white 1px solid;
-}
 .pie, .realData{
     padding: 8px;
 }
@@ -136,4 +133,63 @@ h2{
         display: block;
         width: 100%;
     }
+}
+
+/* Massages page */
+.Massages{
+    margin: 4px;
+    margin-bottom: 10px;
+    padding: 4px;
+    padding-bottom: 10px;
+    border-bottom: black 2px solid;
+}
+.flex2{
+    display: flex;
+    place-content: space-between;
+}
+.name2{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(206, 240, 240);
+}
+.new{
+    color: #7de05f;
+}
+.person, .dateAndTime{
+    font-size: 1.5vw;
+    padding: 2px;
+    color: rgb(175, 182, 181);
+}
+.text{
+    text-align: justify;
+    text-justify: inter-word;
+    color: rgb(218, 209, 208);
+}
+
+.latestParcel{
+    padding: 10px;
+    background: rgb(46, 41, 63);
+    border-radius: 4px;
+}
+.allParcels .flex2{
+    color: rgb(202, 189, 189);
+    padding: 10px;
+}
+.from, .to, .item, .status, .region, .name, .code, .position{
+    width: 100%;
+    padding: 4px;
+}
+.allParcels .heading{
+    font-weight: bold;
+    background: rgb(28, 16, 43);
+    height: 40px;
+}
+.notHeading{
+    font-size: 1vw;
+    background: rgb(34, 34, 49);
+    border-bottom: rgb(153, 145, 145) 1px solid;
+}
+.latestParcel .title{
+    margin-left: 10px;
+    font-size: 30px;
 }
